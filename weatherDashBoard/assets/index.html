@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Dash of Weather</title>
+</head>
+<body>
+    <section>
+        <div class="columns mt-2 ml-2">
+            <p>Dash Of Weather, Spot Of Sunshine</p>
+            <p>Give Us A try, Tell Your Friends</p>
+        </div>
+    </section>
+    <section>
+        <div class="columns is-mobile is-centered mt-6">
+            <div class="column is-half">
+              <p class="bd-notification is-primary"></p>
+              <p class="subtitle"><input class="input is-info" id="zipSearchInputField" type="text" maxlength="5" 
+                value="" required title="Requires 5 digit US ZIP code." placeholder="Zip code..." pattern = "[0-9]{5,5}"></p>
+            <div class="buttons">
+                <button id="zipSearchBtn" type="submit" class="button is-info">submit</button> 
+                <div class="column is-narrow is-one-third">
+                    <div style="width: 230px;">
+                        <div id="weather-card" class="card">
+                            
+                        </div>
+                    </div>   
+                </div>
+                <div class="column is-narrow is-one-third">
+                    <div style="width: 230px;">
+                        <div id="weather-card-1" class="card-1">
+                            
+                        </div>
+                    </div>   
+                </div>
+            
+            </div>
+            
+               
+            <div class="column is-half">
+                <code>is-half</code>
+              </div>
+          </div>
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
